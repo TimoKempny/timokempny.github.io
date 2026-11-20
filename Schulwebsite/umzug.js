@@ -44,6 +44,8 @@ if (!/^\/schulwebsite(\/|$)/i.test(location.pathname)) throw new Error("Keine Sc
 const ziel = zielAdresse();
 const link = document.getElementById("ziel");
 if (link) { link.href = ziel; link.textContent = "schulwebsite.timokempny.workers.dev"; }
+const umzug = document.getElementById("umzug");
+if (umzug) umzug.hidden = false;
 const titel = document.getElementById("titel");
 if (titel) titel.textContent = "Die Schulwebsite ist umgezogen";
 document.title = "Schulwebsite ist umgezogen";
